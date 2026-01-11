@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Familia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Material Icons (gratis, modernas) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <style>
     body {
@@ -11,40 +14,49 @@
       background-color: #F3F4F6;
       margin: 0;
       padding: 20px;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      font-size: 34px;
+      font-size: 36px;
       color: #111827;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
 
     .card {
       display: flex;
       align-items: center;
       background: #FFFFFF;
-      border-radius: 16px;
-      padding: 22px;
-      margin-bottom: 20px;
+      border-radius: 18px;
+      padding: 26px;
+      margin-bottom: 22px;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.15s ease;
+    }
+
+    .card:active {
+      transform: scale(0.98);
     }
 
     .icon {
-      font-size: 36px;
-      margin-right: 20px;
+      font-size: 52px;
+      color: #2563EB;
+      margin-right: 24px;
     }
 
     .text {
-      font-size: 22px;
+      font-size: 24px;
+      font-weight: 600;
       color: #111827;
+      text-align: left;
     }
 
     .subtext {
-      font-size: 16px;
+      font-size: 17px;
       color: #374151;
-      margin-top: 4px;
+      margin-top: 6px;
+      text-align: left;
     }
   </style>
 </head>
@@ -53,24 +65,33 @@
 
   <h1>Bienvenidos</h1>
 
-  <a class="card" href="fotos.html">
-    <div class="icon">📷</div>
+  <!-- Fotos -->
+  <a class="card"
+     href="TU_LINK_DE_DRIVE_AQUI"
+     target="_blank">
+    <span class="material-icons icon">photo_library</span>
     <div>
       <div class="text">Fotos de la familia</div>
       <div class="subtext">Recuerdos y momentos</div>
     </div>
   </a>
 
-  <a class="card" href="recetas.html">
-    <div class="icon">🍲</div>
+  <!-- Recetas -->
+  <a class="card"
+     href="TU_LINK_DE_DRIVE_AQUI"
+     target="_blank">
+    <span class="material-icons icon">restaurant</span>
     <div>
       <div class="text">Recetas de cocina</div>
       <div class="subtext">Paso a paso</div>
     </div>
   </a>
 
-  <a class="card" href="instrucciones.html">
-    <div class="icon">📄</div>
+  <!-- Instrucciones -->
+  <a class="card"
+     href="TU_LINK_DE_DRIVE_AQUI"
+     target="_blank">
+    <span class="material-icons icon">description</span>
     <div>
       <div class="text">Instrucciones</div>
       <div class="subtext">Guías importantes</div>
@@ -79,3 +100,4 @@
 
 </body>
 </html>
+
