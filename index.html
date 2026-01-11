@@ -5,9 +5,6 @@
   <title>Familia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Material Icons (gratis, modernas) -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <style>
     body {
       font-family: system-ui, -apple-system, Arial, sans-serif;
@@ -19,44 +16,45 @@
 
     h1 {
       font-size: 36px;
-      color: #111827;
       margin-bottom: 35px;
+      color: #111827;
     }
 
-    .card {
+    .button {
       display: flex;
       align-items: center;
-      background: #FFFFFF;
-      border-radius: 18px;
+      background-color: #FFFFFF;
+      color: #111827;
+      text-decoration: none;
       padding: 26px;
       margin-bottom: 22px;
-      text-decoration: none;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      font-size: 24px;
+      border-radius: 18px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
       transition: transform 0.15s ease;
     }
 
-    .card:active {
-      transform: scale(0.98);
+    .button:active {
+      transform: scale(0.97);
     }
 
     .icon {
-      font-size: 52px;
-      color: #2563EB;
-      margin-right: 24px;
+      font-size: 48px;
+      margin-right: 22px;
     }
 
     .text {
-      font-size: 24px;
-      font-weight: 600;
-      color: #111827;
       text-align: left;
     }
 
-    .subtext {
+    .title {
+      font-weight: 600;
+    }
+
+    .subtitle {
       font-size: 17px;
       color: #374151;
       margin-top: 6px;
-      text-align: left;
     }
   </style>
 </head>
@@ -65,36 +63,27 @@
 
   <h1>Bienvenidos</h1>
 
-  <!-- Fotos -->
-  <a class="card"
-     href="https://drive.google.com/drive/folders/1fZfx3SXTq_RwF2TXMgpJzOChAjCmgu_s?usp=drive_link"
-     target="_blank">
-    <span class="material-icons icon">photo_library</span>
-    <div>
-      <div class="text">Fotos de la familia</div>
-      <div class="subtext">Recuerdos y momentos</div>
+  <a class="button" href="https://drive.google.com/drive/folders/1fZfx3SXTq_RwF2TXMgpJzOChAjCmgu_s?usp=drive_link" target="_blank">
+    <div class="icon">📷</div>
+    <div class="text">
+      <div class="title">Fotos de la familia</div>
+      <div class="subtitle">Recuerdos y momentos</div>
     </div>
   </a>
 
-  <!-- Recetas -->
-  <a class="card"
-     href="https://drive.google.com/drive/folders/1RmrXOLKbhLEYBFRcTUIn8jr9UBQniMfp?usp=drive_link"
-     target="_blank">
-    <span class="material-icons icon">restaurant</span>
-    <div>
-      <div class="text">Recetas de cocina</div>
-      <div class="subtext">Paso a paso</div>
+  <a class="button" href="https://drive.google.com/drive/folders/1RmrXOLKbhLEYBFRcTUIn8jr9UBQniMfp?usp=drive_link" target="_blank">
+    <div class="icon">🍲</div>
+    <div class="text">
+      <div class="title">Recetas de cocina</div>
+      <div class="subtitle">Paso a paso</div>
     </div>
   </a>
 
-  <!-- Instrucciones -->
-  <a class="card"
-     href="https://drive.google.com/drive/folders/1Vx6q3zref8GFdzc5C3cm9PBwBZUMXwZd?usp=drive_link"
-     target="_blank">
-    <span class="material-icons icon">description</span>
-    <div>
-      <div class="text">Instrucciones</div>
-      <div class="subtext">Guías importantes</div>
+  <a class="button" href="https://drive.google.com/drive/folders/1Vx6q3zref8GFdzc5C3cm9PBwBZUMXwZd?usp=drive_link" target="_blank">
+    <div class="icon">📄</div>
+    <div class="text">
+      <div class="title">Instrucciones</div>
+      <div class="subtitle">Guías importantes</div>
     </div>
   </a>
 
